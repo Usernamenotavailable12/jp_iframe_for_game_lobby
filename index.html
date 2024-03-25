@@ -1,0 +1,315 @@
+<!doctype html>
+<html class="no-js">
+<style>
+.container-jp-lobby {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url('https://game-assets-tma1-prd.themill.tech/cdn-cgi/image/f=avif,f=auto/tm/amusnet/vampire-night-1920x1080'); 
+    padding: 20px;
+    border-radius: 5px;
+    background-size: cover;
+    aspect-ratio: 16/9;
+}
+/* background-image: url('https://game-assets-tma1-prd.themill.tech/cdn-cgi/image/f=avif,f=auto/tm/amusnet/vampire-night-1920x1080'); */
+
+.container-jp-lobby * {
+    box-sizing: border-box;
+}
+
+.container-jp-lobby .number-box .wrapper {
+    padding: 6px 0px;
+    padding-left: 5px;
+    width: 100%;
+    text-align: right;
+}
+
+.container-jp-lobby .number-slider {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.container-jp-lobby .numbers {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: -2px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.numbers--box {
+    display: flex;
+    align-items: center;
+}
+
+
+.container-jp-lobby .numbers__item {
+    width: 150px;
+    height: 29px;
+    display: flex;
+    color: #ffffff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.numbers__item.numbers__item--jvari {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/306d2144-fafd-4459-862b-27f71b564ab5/jvari.png?auto=format%2Ccompress");margin-right: 36px;}
+.numbers__item.numbers__item--aguri {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/2dc827f6-f838-478c-ba48-51ba82bf8467/aguri.png?auto=format%2Ccompress")}
+.numbers__item.numbers__item--guli {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/a4f97f18-9e74-4bf1-82ca-ec96463932f0/guli.png?auto=format%2Ccompress");margin-right: 36px;}
+.numbers__item.numbers__item--yvavi {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/c6a4ef51-3d0a-4ece-b3e0-862408a76d3f/yvavi.png?auto=format%2Ccompress")}
+
+
+.container-jp-lobby .numbers__item .numbers__item--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-jp-lobby .number__item--img {
+    width: 90px;
+}
+
+.container-jp-lobby .numbers__item-wrap {
+    padding: 0 12px 0 35px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.container-jp-lobby .numbers .lari {
+    line-height: 27px;
+    font-family: PantonMtav3-Bold;
+    font-weight: normal;
+    padding-left: 6px;
+    font-size: 12px;
+    padding-top: 2px;
+}
+
+.container-jp-lobby .number-box {
+    overflow: hidden;
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.container-jp-lobby .number-box .jack {
+    height: 27px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+.jack>div {
+    display: inline-block;
+    margin-top: -54px;
+    font-size: 17px;
+}
+
+.jack>div>span {
+    display: block;
+    font-family: PantonMtav3-Bold;
+}
+
+.jack>div>span.dot {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.jack>div.go {
+    -ms-transform: translateY(-28px);
+    transform: translateY(-28px);
+}
+@media (max-width: 1300px) {
+    .jackpot-logo-amb-mob {
+        display: none;
+    }
+    .container-jp-lobby .numbers {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+    margin-top: -2px;
+    flex-direction: column;
+    gap: 10px;
+}
+.numbers--box {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+    margin-top: -2px;
+    flex-direction: column;
+}
+.numbers__item.numbers__item--jvari,
+.numbers__item.numbers__item--guli {
+    margin: 0;
+}
+}
+
+
+</style>
+    <div class="container-jp-lobby">
+        <div class="numbers">
+            <img class="jackpot-logo-amb-mob" src="https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/7e7e7e3a-d828-4822-9b1e-c50e2b1fb994/logo.png?auto=format%2Ccompress" width="90" height="auto">
+            <div class="numbers--box">
+                <div class="numbers__item numbers__item--jvari">
+                    <div class="numbers__item-wrap">
+                        <div class="number-box">
+                            <div id="wrapp0" class="jack"></div>
+                        </div>
+                        <div class="lari">GEL</div>
+                    </div>
+                </div>
+                <div class="numbers__item numbers__item--aguri">
+                    <div class="numbers__item-wrap">
+                        <div class="number-box">
+                            <div id="wrapp1" class="jack"></div>
+                        </div>
+                        <div class="lari">GEL</div>
+                    </div>
+                </div>
+            </div>
+            <div class="numbers--box">
+                <div class="numbers__item numbers__item--guli">
+                    <div class="numbers__item-wrap">
+                        <div class="number-box">
+                            <div id="wrapp2" class="jack"></div>
+                        </div>
+                        <div class="lari">GEL</div>
+                    </div>
+                </div>
+                <div class="numbers__item numbers__item--yvavi">
+                    <div class="numbers__item-wrap">
+                        <div class="number-box">
+                            <div id="wrapp3" class="jack"></div>
+                        </div>
+                        <div class="lari">GEL</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+const TIME_INTERVAL = 10;
+const JSON_URI = 'https://stats.games.amusnet.io/jackpot_AmbassadoribetGE_GEL.json';
+let intervals = [];
+let previousJackpots = [];
+
+syncJackpots();
+
+setInterval(() => {
+    syncJackpots();
+}, TIME_INTERVAL * 1000);
+
+function syncJackpots() {
+    fetch(JSON_URI, { cache: 'no-cache' })
+    .then(res => res.json())
+    .then(data => {
+        intervals.forEach(interval => clearInterval(interval));
+        intervals = [];
+
+        if (previousJackpots.length === 0) {
+            previousJackpots = [
+                parseInt(data.currentLevelI.toString().replace('.', '')),
+                parseInt(data.currentLevelII.toString().replace('.', '')),
+                parseInt(data.currentLevelIII.toString().replace('.', '')),
+                parseInt(data.currentLevelIV.toString().replace('.', ''))
+            ];
+        } else {
+            // Update previousJackpots with the latest data
+            previousJackpots[0] = parseInt(data.currentLevelI.toString().replace('.', ''));
+            previousJackpots[1] = parseInt(data.currentLevelII.toString().replace('.', ''));
+            previousJackpots[2] = parseInt(data.currentLevelIII.toString().replace('.', ''));
+            previousJackpots[3] = parseInt(data.currentLevelIV.toString().replace('.', ''));
+        }
+
+        const currentJackpots = [
+            parseInt(data.currentLevelI.toString().replace('.', '')),
+            parseInt(data.currentLevelII.toString().replace('.', '')),
+            parseInt(data.currentLevelIII.toString().replace('.', '')),
+            parseInt(data.currentLevelIV.toString().replace('.', ''))
+        ];
+        
+        const diffs = currentJackpots.map((jackpot, index) => jackpot - previousJackpots[index]);
+
+        const wrap = [];
+        const domArr = [];
+
+        previousJackpots.forEach((jackpot, index) => {
+            createInitialDomElements(wrap, domArr, jackpot, index);
+
+            const updateInterval = TIME_INTERVAL * 1000 / diffs[index]; // Calculate update interval based on difference
+            intervals.push(
+                setInterval(() => {
+                    iterateAndUpdateJackpot(previousJackpots, index, wrap, domArr);
+                }, updateInterval)
+            );
+        });
+    });
+}
+
+function createInitialDomElements(wrap, domArr, jackpot, index) {
+    wrap[index] = document.getElementById('wrapp' + index);
+    wrap[index].innerHTML = '';
+    domArr[index] = [];
+
+    jackpot.toString().split('').forEach((number, numIndex) => {
+        const numDom = document.createElement('div');
+        numDom.innerHTML = parseInt(number)
+        wrap[index].appendChild(numDom);
+        domArr[index].push(numDom)
+    
+        if (((jackpot.toString().length - 3) - numIndex) % 3 == 0) {
+            const numDomSeparator = document.createElement('div');
+            const separator = jackpot.toString().length - 3 == numIndex ? '.' : ',';
+            for(var i = 0; i < 3; i ++){
+                const a = document.createElement('div');
+                a.innerHTML = separator;
+                numDomSeparator.appendChild(a);
+            }
+            wrap[index].appendChild(numDomSeparator);
+        }
+    });
+}
+function iterateAndUpdateJackpot(jackpots, index, wrap, domArr) {
+    jackpots[index]++
+    const jackpot = jackpots[index];
+
+    const jackLength = jackpot.toString().length;
+    if (wrap[index].children.length != jackLength + Math.floor(jackLength / 3)) {
+        createInitialDomElements(wrap, domArr, jackpot, index);
+        return;
+    }
+
+    const el = domArr[index][domArr[index].length - 1];
+
+    el.innerHTML = (parseInt(el.innerHTML) + 1) % 10;
+
+    let div = 1;
+    for (let i = domArr[index].length - 1; i >= 0; i--) {
+        div *= 10;
+        if (jackpot % div == 0) {
+            domArr[index][i].innerHTML = (parseInt(domArr[index][i].innerHTML) + 1) % 10
+        }
+    }
+}
+    </script>
+</html>
